@@ -1,2 +1,6 @@
-# python-healer-agent
-A python based agent that analyses failed tests and if possible, heals them.
+# Test Healer Agent (Python)
+
+An AI agent that runs a test suite, diagnoses failing tests with an LLM,
+proposes and verifies fixes, and measures its own success rate.
+
+Status: work in progress.
