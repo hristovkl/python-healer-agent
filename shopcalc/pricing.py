@@ -7,8 +7,7 @@ def net_to_gross(net: float, vat_rate: float = 0.19) -> float:
 def apply_discount(price: float, percent: float) -> float:
     if percent < 0 or percent >100:
         raise ValueError("Discount percent must be between 0 and 100 percent")
-    discounted_amount =round(price * (1 - percent / 100), 2)
-    return round(price * (1 - percent / 100), 2)
+    return round(price / (1 - percent / 100), 2)
 
 
 def cart_total(items: list[dict]) -> float:
