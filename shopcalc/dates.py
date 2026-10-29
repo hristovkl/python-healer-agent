@@ -14,7 +14,7 @@ def add_business_days(start_date: date, number_of_days: int) -> list[date]:
     current = start_date
     while len(weekdays_added) < number_of_days:
         current += timedelta(days=1)
-        if not weekend_checker(current):
+        if  weekend_checker(current):
             weekdays_added.append(current)
     return weekdays_added
 
