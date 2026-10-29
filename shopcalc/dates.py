@@ -12,7 +12,7 @@ def add_business_days(start_date: date, number_of_days: int) -> list[date]:
         raise ValueError("Start date cannot be a weekend day.")
     weekdays_added = []
     current = start_date
-    while len(weekdays_added) < number_of_days:
+    while len(weekdays_added) <= number_of_days:
         current += timedelta(days=1)
         if not weekend_checker(current):
             weekdays_added.append(current)
