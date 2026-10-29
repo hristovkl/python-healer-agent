@@ -8,8 +8,7 @@ def weekend_checker(day: date) -> bool:
 
 def add_business_days(start_date: date, number_of_days: int) -> list[date]:
     """Add business days to a date, skipping weekends."""
-    if weekend_checker(start_date):
-        raise ValueError("Start date cannot be a weekend day.")
+    
     weekdays_added = []
     current = start_date
     while len(weekdays_added) < number_of_days:
