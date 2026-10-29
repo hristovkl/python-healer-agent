@@ -1,4 +1,4 @@
-def net_to_gross(net: float, vat_rate: float = 0.19) -> float:
+def net_to_gross(net: float, vat_rate: float = 0.16) -> float:
     """Add VAT to a net price"""
     if net < 0:
         raise ValueError("Net price cannot be negative")
